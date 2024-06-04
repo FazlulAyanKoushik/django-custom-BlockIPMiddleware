@@ -9,4 +9,4 @@ def my_ip_geolocation_data(request):
 
     # Render the template with the geolocation data
     return HTTPResponse(
-        f"City: {geolocation_data}")
+        f"Data: {geolocation_data}")
