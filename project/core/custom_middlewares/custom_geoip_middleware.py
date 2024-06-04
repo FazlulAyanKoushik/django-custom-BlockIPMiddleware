@@ -30,7 +30,6 @@ class GeolocationMiddleware:
 
     def get_geolocation_data(self, ip):
         # Use a geolocation API (e.g., ipinfo.io) to get details based on the IP
-        ip = "59.153.103.106"
         url = f"https://ipinfo.io/{ip}/json"
         response = requests.get(url)
         data = response.json()
